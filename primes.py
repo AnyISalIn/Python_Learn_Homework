@@ -5,7 +5,7 @@ def count_prime(n):
     max_value = int(n**0.5)
     for x in range(3, n+1, 2):
         c += 1
-        if c == max_value/2:
+        if c == float(max_value)/2:
             max_primes = primes[:]
         if x < max_value or x < 10:
             for prime in primes:
