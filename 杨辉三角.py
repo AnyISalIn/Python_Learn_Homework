@@ -12,10 +12,8 @@ def yhsj(layer):
 
 def main(layer):
     max_len = len(' '.join(str(x) for x in list(yhsj(layer))[-1]))
-    c = 0
     for i in yhsj(layer):
         string = ' '.join([ str(x) for x in i ])
-        c += 1
         yield(string.center(max_len))
 
 if __name__ == '__main__':
